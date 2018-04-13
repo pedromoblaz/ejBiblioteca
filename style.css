@@ -1,11 +1,12 @@
 /*  CSS  */
         /* ID */
-#dehaze         {
+#iconMenu
+         {
                 background-color: rgba(0,0,0,0);
                 border-color: rgba(0,0,0,0);
                 }
 
-        /* CLASSES */            
+        /* CLASSES */
 .jumbotron        {
                   padding: 0;
                   }
