@@ -1,0 +1,25 @@
+/*  CSS  */
+        /* ID */
+#dehaze         {
+                background-color: rgba(0,0,0,0);
+                border-color: rgba(0,0,0,0);
+                }
+
+        /* CLASSES */            
+.jumbotron        {
+                  padding: 0;
+                  }
+
+.display-4        {
+                  color: white;
+                  }
+
+  .right          {
+                  position: absolute;
+                  right: 0px;
+                  width: 300px;
+                  }
+
+  .material-icons {
+                  color: white;
+                  }

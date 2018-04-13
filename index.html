@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Consultas biblioteca</title>
+
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--Boostrap-->
+  <!--CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!--JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<!--FONTS-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--CSS-->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>
+        <div class="jumbotron jumbotron-fluid" style="background-color: #654EA3;">
+          <div class="container-fluid">
+            <h1 class="display-4">Biblioteca</h1>
+
+<!--
+            <div class="container-fluid">
+              <a href="varmenu.php"><i class="material-icons">dehaze</i></a>
+            </div>
+-->
+
+<div class="dropdown">
+  <button id="dehaze" class="btn btn-secondary" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a href="varmenu.php"><i class="material-icons">dehaze</i></a>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Insertar</button>
+    <button class="dropdown-item" type="button">Consulta</button>
+    <button class="dropdown-item" type="button">Actualizar</button>
+    <button class="dropdown-item" type="button">Eliminar</button>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </header>
+<!--
+  <nav>
+    <div class="dropdown-menu">
+      <h6 class="dropdown-header">Dropdown header</h6>
+      <a class="dropdown-item" href="#">Consultar</a>
+      <a class="dropdown-item" href="#">Insertar</a>
+      <a class="dropdown-item" href="#">Actualizar</a>
+      <a class="dropdown-item" href="#">Eliminar</a>
+    </div>
+  </nav>
+-->
+<!--
+  <section>
+        <div class="container">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Editorial
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <form action="">
+                        <label for="">Código de la editorial</label>
+                        <input type="text" class="form-control">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Personas
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <form action="" class="form-group">
+                        <label for="">Código personal</label>
+                        <input type="text" class="form-control">
+                        <label for="">DNI</label>
+                        <input type="text" class="form-control">
+                        <label for="">Teléfono</label>
+                        <input type="text" class="form-control">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control">
+                        <label for="">Apellidos</label>
+                        <input type="text" class="form-control">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Autor
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <form action="">
+                        <label for="">Nombre completo</label>
+                        <input type="text" class="form-control">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Libro
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                      <form action="">
+                        <label for="">ISBN</label>
+                        <input type="text" class="form-control">
+                        <label for="">Título</label>
+                        <input type="text" class="form-control">
+                        <label for="">Año de publicación</label>
+                        <input type="text" class="form-control">
+                        <label for="">Año de edición</label>
+                        <input type="text" class="form-control">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Ejemplar
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                      <form action="">
+                        <label for="">ISBN</label>
+                        <input type="text" class="form-control">
+                        <label for="">Código del ejemplar</label>
+                        <input type="text" class="form-control">
+                        <label for="">Estado</label>
+                        <input type="text" class="form-control">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Prestamos
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                      <form action="" class="form-group">
+                        <label for="">Código del préstamo</label>
+                        <input type="text" class="form-control">
+                        <label for="">Fecha de realización</label>
+                        <input type="text" class="form-control">
+                        <label for="">Fecha de devolución</label>
+                        <input type="text" class="form-control">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+      </section>
+-->
+  <footer>
+
+  </footer>
+</body>
+</html>
